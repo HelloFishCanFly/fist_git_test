@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active:
+      -dev
+---
+spring:
+  profiles: dev
+  application:
+    name: my-srping-cloud-config-server7004-dev
+
+---
+spring:
+  profiles: test
+  application:
+    name: my-spring-cloud-config-server7004-test
