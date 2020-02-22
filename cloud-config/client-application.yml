@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active:
+      -dev
+---
+server:
+  port: 8011
+spring:
+  application:
+    name: github-client-name-dev
+  profiles: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+---
+server:
+  port: 8011
+spring:
+  application:
+    name: github-client-name-test
+  profiles: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
